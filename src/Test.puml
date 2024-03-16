@@ -1,0 +1,5 @@
+@startuml
+class YourClassName {
+  +{static} void main(String[] args)
+}
+@enduml

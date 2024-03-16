@@ -37,7 +37,12 @@ public class ClientManager {
                 String name = items[1];
                 String phoneNumber = items[2];
 
-                Client client = new Client(id, name, phoneNumber);
+                Client client = new ConcreteClientBuilder()
+                        .setId(id)
+                        .setName(name)
+                        .setPhoneNumber(phoneNumber)
+                        .build();
+
                 clients.add(client);
             }
 
